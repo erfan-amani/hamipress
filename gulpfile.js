@@ -6,7 +6,7 @@ const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 
 gulp.task('styles', function() {
-    return gulp.src('sass/main/*.scss')
+    return gulp.src('sass/main.scss')
         .pipe(sass())
         .pipe(concat('styles.css'))
         // .pipe(uglify())
@@ -24,7 +24,7 @@ gulp.task('clean', () => {
 
 
 gulp.task('watch', () => {
-    gulp.watch('sass/main/*.scss', (done) => {
+    gulp.watch('sass/main.scss', (done) => {
         gulp.series(['styles'])(done);
     });
 });
