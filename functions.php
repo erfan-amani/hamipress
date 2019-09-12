@@ -209,15 +209,12 @@ add_action( 'widgets_init', 'hamipress_widgets_init' );
  */
 function hamipress_scripts() {
 	wp_enqueue_style( 'hamipress-style',    get_stylesheet_uri(), array(), HAMIPRESS_VERSION );
-	wp_enqueue_style( 'bootstrap-grid',     get_template_directory_uri() . '/css/bootstrap-grid.min.css', array() );
-
-	wp_enqueue_script( 'hamipress-script',     get_template_directory_uri() . '/js/hamipress-script.js', array(), HAMIPRESS_VERSION, true );
-
-	// support rtl style.
-	wp_style_add_data( 'hamipress-style', 'rtl', 'replace' );
-
+	wp_enqueue_style( 'hamipress-all-styles',    get_template_directory_uri() . '/css/styles.css', array(), HAMIPRESS_VERSION );
 	// prettify printing view
 	wp_enqueue_style( 'hamipress-print-style', get_template_directory_uri() . '/print.css', array(), HAMIPRESS_VERSION, 'print' );
+
+
+	wp_enqueue_script( 'hamipress-script',     get_template_directory_uri() . '/js/hamipress-script.js', array(), HAMIPRESS_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'hamipress_scripts' );
 

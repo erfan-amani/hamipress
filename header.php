@@ -21,14 +21,14 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="container">
+<div id="page" class="">
 
 	<header id="masthead" class="site-header">
 
-		<div class="site-branding-container">
+		<div class="site-branding-container container">
 			<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 		</div><!-- .site-branding-container -->
 
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content container">
