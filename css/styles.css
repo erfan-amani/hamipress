@@ -9757,3 +9757,32 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+
+@font-face {
+  font-family: "Estedad";
+  font-weight: normal;
+  src: url("../fonts/estedad/Estedad-Light.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Estedad";
+  font-weight: 100;
+  src: url("../fonts/estedad/Estedad-Thin.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Estedad";
+  font-weight: 200;
+  src: url("../fonts/estedad/Estedad-Medium.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Estedad";
+  font-weight: bold;
+  src: url("../fonts/estedad/Estedad-Bold.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "Estedad";
+  font-weight: 900;
+  src: url("../fonts/estedad/Estedad-Black.woff2") format("woff2"); }
+
+body {
+  font-family: Estedad, Helvetica, serif;
+  color: #212121; }

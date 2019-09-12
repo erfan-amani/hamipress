@@ -24,7 +24,7 @@ gulp.task('clean', () => {
 
 
 gulp.task('watch', () => {
-    gulp.watch('sass/bootstrap/bootstrap-grid.scss', (done) => {
-        gulp.series(['clean', 'styles'])(done);
+    gulp.watch('sass/main/*.scss', (done) => {
+        gulp.series(['styles'])(done);
     });
 });

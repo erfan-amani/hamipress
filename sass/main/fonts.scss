@@ -1,0 +1,6 @@
+@import "../mixins/font-face";
+@include font-face(Estedad, "../fonts/estedad/Estedad-Light", normal, null, woff2);
+@include font-face(Estedad, "../fonts/estedad/Estedad-Thin", 100, null, woff2);
+@include font-face(Estedad, "../fonts/estedad/Estedad-Medium", 200, null, woff2);
+@include font-face(Estedad, "../fonts/estedad/Estedad-Bold", bold, null, woff2);
+@include font-face(Estedad, "../fonts/estedad/Estedad-Black", 900, null, woff2);
