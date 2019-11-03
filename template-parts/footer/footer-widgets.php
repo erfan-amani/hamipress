@@ -9,16 +9,8 @@
 
 if ( is_active_sidebar( 'footer' ) ) : ?>
 
-    <aside class="widget-area" role="complementary">
-		<?php
-		if ( is_active_sidebar( 'footer' ) ) {
-			?>
-            <div class="widget-column footer-widget">
-				<?php dynamic_sidebar( 'footer' ); ?>
-            </div>
-			<?php
-		}
-		?>
-    </aside><!-- .widget-area -->
+<aside class="widget-area row">
+     <?php dynamic_sidebar( 'footer' ); ?>
+</aside><!-- .widget-area -->
 
 <?php endif; ?>

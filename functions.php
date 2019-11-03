@@ -193,7 +193,7 @@ function hamipress_widgets_init() {
 			'name'          => __( 'Footer', HAMIPRESS_TEXTDOMAIN ),
 			'id'            => 'footer',
 			'description'   => __( 'Add widgets here to appear above your footer.', HAMIPRESS_TEXTDOMAIN ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'before_widget' => '<section id="%1$s" class="widget %2$s col-sm-3">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h4 class="widget-title">',
 			'after_title'   => '</h4>',
@@ -211,7 +211,7 @@ function hamipress_scripts() {
 	wp_enqueue_style( 'hamipress-style',    get_stylesheet_uri(), array(), HAMIPRESS_VERSION );
 	wp_enqueue_style( 'hamipress-all-styles',    get_template_directory_uri() . '/css/styles.css', array(), HAMIPRESS_VERSION );
 	// prettify printing view
-	wp_enqueue_style( 'hamipress-print-style', get_template_directory_uri() . '/print.css', array(), HAMIPRESS_VERSION, 'print' );
+//	wp_enqueue_style( 'hamipress-print-style', get_template_directory_uri() . '/print.css', array(), HAMIPRESS_VERSION, 'print' );
 
 
 	wp_enqueue_script( 'hamipress-script',     get_template_directory_uri() . '/js/hamipress-script.js', array(), HAMIPRESS_VERSION, true );

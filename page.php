@@ -11,8 +11,9 @@
 
 get_header();
 ?>
-
-	<section id="primary" class="content-area">
+<div class="row">
+    <div class="col-sm-9">
+	    <section id="primary" class="content-area">
 		<main id="main" class="site-main">
 
 			<?php
@@ -33,6 +34,10 @@ get_header();
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
+    </div>
+    <div class="col-sm-3">
+		<?php get_sidebar('page');?>
+    </div>
+</div>
 
-<?php
-get_footer();
+<?php get_footer();?>
